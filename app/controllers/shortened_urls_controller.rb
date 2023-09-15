@@ -15,7 +15,7 @@ class ShortenedUrlsController < ApplicationController
   private
 
   def sanitize_url(url)
-    url.strip.downcase.gsub(/(https?:\/\/)|(www\.)/, "")
+    url.strip.downcase.gsub(%r{(https?://)|(www\.)}, '')
   end
 
   def shorten(long_url)

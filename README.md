@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
- <h1>Collection of variety of Cars</h1>
+ <h1>Slack Url Shortener</h1>
 </div>
 
 📗 Table of Contents

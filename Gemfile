@@ -79,3 +79,5 @@ end
 gem 'slack-ruby-client'
 
 gem 'dotenv-rails'
+
+gem 'pg', '~> 1.5.4'

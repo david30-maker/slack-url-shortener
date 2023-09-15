@@ -11,9 +11,6 @@ gem 'rails', '~> 7.0.8'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
-# Use sqlite3 as the database for Active Record
-
-
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
 
@@ -49,15 +46,12 @@ gem 'bootsnap', require: false
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
-
-gem 'async-websocket', '~>0.8.0'
-gem 'slack-ruby-bot', '~> 0.16'
-
+gem 'slack-ruby-client'
+gem 'dotenv-rails'
 group :development, :test do
-  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem 'rspec-rails', '~> 5.0.0'
-  gem 'sqlite3', '~> 1.4'
+  gem "sqlite3", "~> 1.4"
 end
 
 group :development do
@@ -70,19 +64,13 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
-
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
   gem 'selenium-webdriver'
 end
 
-gem 'slack-ruby-client'
-
-gem 'dotenv-rails'
-
 group :production do
-gem 'pg', '1.5.2'
-
-gem 'rails_12factor'
+  gem 'pg', '1.5.2'
+  gem 'rails_12factor'
 end

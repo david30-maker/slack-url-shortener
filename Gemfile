@@ -78,10 +78,7 @@ end
 
 gem 'slack-ruby-client'
 
-gem 'dotenv-rails'
-
 group :production do
-gem 'pg', '1.5.2'
-
-gem 'rails_12factor'
+  gem 'pg', '1.5.2'
+  gem 'rails_12factor'
 end

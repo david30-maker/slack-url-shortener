@@ -50,12 +50,14 @@ gem "bootsnap", require: false
 
 gem 'slack-ruby-bot', '~> 0.16'
 gem 'async-websocket', '~>0.8.0'
+gem 'slack-ruby-client'
+
+gem 'dotenv-rails'
 
 group :development, :test do
-  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
-   gem 'rspec-rails', '~> 5.0.0'
-   gem "sqlite3", "~> 1.4"
+  gem 'rspec-rails', '~> 5.0.0'
+  gem "sqlite3", "~> 1.4"
 end
 
 group :development do
@@ -75,8 +77,6 @@ group :test do
   gem "selenium-webdriver"
 
 end
-
-gem 'slack-ruby-client'
 
 group :production do
   gem 'pg', '1.5.2'

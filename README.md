@@ -29,7 +29,7 @@
 
 # 📖 [Car_Collection] <a name="about-project"></a>
 
-Car_Collection application is a website application that allows users to add car brand, make reservation of any choice of car, delete car from collection of car and users can see a detail of any car.
+The Slackbot URL Shortener Rails App is a web application that allows you to shorten long URLs into more manageable and user-friendly short URLs right from your Slack workspace. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -124,34 +124,8 @@ To run the back end run this command in the terminal
 
 ### Deployment
 
-Coming soon
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## Kanban Board <a name="kanban-board"></a>
-- [Kanban Board](https://github.com/users/Kaghenimbale/projects/8)
-- [Kanban's Board initial state](https://github.com/Kaghenimbale/car_collection/issues/12)
-- Team members: 4
-<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-👤 **Kagheni Mbale Christian**
-
-- GitHub: [@githubhandle](https://github.com/Kaghenimbale)
-- Twitter: [@twitterhandle](https://twitter.com/MbaleKagheni)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kagheni-mbale-401b90240/)
-
-👤 **Eduardo Villarreal**
-
-- GitHub: [@evillaz](https://github.com/evillaz)
-- Twitter: [@evillazz](https://twitter.com/evillazz)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/eduardo-villarreal-144a8925a)
-
-👤 **Okpara Blessing Oluchi**
-
-- GitHub: (https://github.com/Luchy-B)
-- LinkedIn: (https://www.linkedin.com/blessing-okpara/)
 
 👤 **Okpah Igbo**
 
@@ -161,8 +135,6 @@ Coming soon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
-
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Add Cancel Reservation]**
@@ -170,17 +142,13 @@ Coming soon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Kaghenimbale/car_collection/issues).
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
@@ -192,13 +160,9 @@ Give a start ⭐️ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Thank you Microverse and my coding partners
-
-[Creative Commons](https://creativecommons.org/licenses/by-nc/4.0/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 

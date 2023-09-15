@@ -2,7 +2,7 @@ class ShortenedUrlsController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def show
-    @url = ShortenedUrl.find_by_short_url("#{ENV['APP_DOMAIN']}/#{params[:short_url]}")
+    @url = ShortenedUrl.find_by_short_url("#{ENV.fetch('APP_DOMAIN', nil)}/#{params[:short_url]}")
     redirect_to "http://www.#{@url.sanitize_url}", allow_other_host: true
   end
 
@@ -15,7 +15,7 @@ class ShortenedUrlsController < ApplicationController
   private
 
   def sanitize_url(url)
-    url.strip.downcase.gsub(/(https?:\/\/)|(www\.)/, "")
+    url.strip.downcase.gsub(%r{(https?://)|(www\.)}, '')
   end
 
   def shorten(long_url)
@@ -38,7 +38,7 @@ class ShortenedUrlsController < ApplicationController
 
   def generate_short_url
     unique_id = [*('a'..'z'), *('0'..'9')].sample(6).join
-    "#{ENV['APP_DOMAIN']}/#{unique_id}"
+    "#{ENV.fetch('APP_DOMAIN', nil)}/#{unique_id}"
   end
 
   def send_short_url_to_slack(channel_id, short_url)

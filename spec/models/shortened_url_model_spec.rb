@@ -1,6 +1,4 @@
-# spec/models/shortened_url_spec.rb
-
-require 'rails_helper'
+require 'rails_helper' # => true
 
 RSpec.describe ShortenedUrl, type: :model do
   context 'validations' do

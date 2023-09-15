@@ -69,16 +69,6 @@ GEM
     addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
-    async (2.6.4)
-      console (~> 1.10)
-      fiber-annotation
-      io-event (~> 1.1)
-      timers (~> 4.1)
-    async-io (1.36.0)
-      async
-    async-websocket (0.8.0)
-      async-io
-      websocket-driver (~> 0.7.0)
     base64 (0.1.1)
     bindex (0.8.1)
     bootsnap (1.16.0)
@@ -94,9 +84,6 @@ GEM
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
     concurrent-ruby (1.2.2)
-    console (1.23.2)
-      fiber-annotation
-      fiber-local
     crass (1.0.6)
     date (3.3.3)
     debug (1.8.0)
@@ -118,8 +105,6 @@ GEM
     faraday-multipart (1.0.4)
       multipart-post (~> 2)
     faraday-net_http (3.0.2)
-    fiber-annotation (0.2.0)
-    fiber-local (1.0.0)
     gli (2.21.1)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -130,7 +115,6 @@ GEM
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
     io-console (0.6.0)
-    io-event (1.3.2)
     irb (1.8.1)
       rdoc
       reline (>= 0.3.8)
@@ -259,10 +243,6 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    slack-ruby-bot (0.16.1)
-      activesupport
-      hashie
-      slack-ruby-client (>= 0.14.0)
     slack-ruby-client (2.1.0)
       faraday (>= 2.0)
       faraday-mashify
@@ -282,7 +262,6 @@ GEM
     stringio (3.0.8)
     thor (1.2.2)
     timeout (0.4.0)
-    timers (4.3.5)
     turbo-rails (1.4.0)
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
@@ -307,7 +286,6 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  async-websocket (~> 0.8.0)
   bootsnap
   capybara
   debug
@@ -321,7 +299,6 @@ DEPENDENCIES
   rspec-rails (~> 5.0.0)
   rubocop (>= 1.0, < 2.0)
   selenium-webdriver
-  slack-ruby-bot (~> 0.16)
   slack-ruby-client
   sprockets-rails
   sqlite3 (~> 1.4)

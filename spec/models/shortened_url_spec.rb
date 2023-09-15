@@ -1,5 +1,3 @@
-# spec/models/shortened_url_spec.rb
-
 require 'rails_helper'
 
 RSpec.describe ShortenedUrl, type: :model do

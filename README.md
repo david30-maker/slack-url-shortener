@@ -85,7 +85,7 @@ Follow these steps to install and configure the Slackbot URL Shortener Rails App
 - rails db:migrate
 
 ## Set up your Slackbot:
-
+- In your slack bot configuration, add a slash command: `/shorten_url`. The request url for this command should be `your_rails_app_base_url/shortened_url/create`
 - Create a new Slackbot integration in your Slack workspace.
 - Note the API token generated for your Slackbot.
 ## Configure environment variables:
@@ -94,7 +94,7 @@ Follow these steps to install and configure the Slackbot URL Shortener Rails App
 
 ## Add the following environment variables to the .env file:
 - SLACK_API_TOKEN=your_slack_api_token
-- BASE_URL=your_app_base_url
+- APP_DOMAIN=your_app_base_url
 
 ## Start the Rails server:
 - rails server
@@ -102,13 +102,14 @@ Follow these steps to install and configure the Slackbot URL Shortener Rails App
 ### Usage
 Once the Slackbot URL Shortener Rails App is set up and running, you can start using it in your Slack workspace. Here's how to use it:
 
-In any Slack channel or private message, type /shorten followed by the long URL you want to shorten. For example:
-- /shorten https://www.example.com/very-long-url-with-lots-of-characters
+In any Slack channel or private message
+- Add your bot to the channel or conversation. You can use /invite to do this.
+-  Type /shorten followed by the long URL you want to shorten. For example: `/shorten https://www.example.com/very-long-url-with-lots-of-characters`
 
 ### Deployment
 
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 👤 **Okpah Igbo**
 
@@ -120,8 +121,7 @@ In any Slack channel or private message, type /shorten followed by the long URL 
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[User Authentication and Authorization]**
-- [ ] **[URL Expiration Policies]**
+- **Send error report to the user if submitted url is invalid**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

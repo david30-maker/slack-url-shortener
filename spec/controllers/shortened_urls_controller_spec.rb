@@ -5,7 +5,7 @@ RSpec.describe ShortenedUrlsController, type: :controller do
     it 'redirects to the sanitized URL' do
       shortened_url = ShortenedUrl.create!(original_url: 'http://example.com', sanitize_url: 'example.com',
                                            short_url: 'http://localhost:3000/abc123')
-      get :show, params: { short_url: shortened_url.short_url }
+      get :show, params: { short_url: 'abc123' }
 
       expect(response).to have_http_status(302)
       expect(response).to redirect_to('http://www.example.com')

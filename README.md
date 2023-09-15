@@ -6,7 +6,7 @@
 
 📗 Table of Contents
 
-- [📖 \[Car_Collection\] ](#-car_collection-)
+- [📖 \[Slack-url-shortener\] ](#-slack-url-shortener-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -27,9 +27,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Car_Collection] <a name="about-project"></a>
+# 📖 [slack-url-shortener] <a name="about-project"></a>
 
-The Slackbot URL Shortener Rails App is a web application that allows you to shorten long URLs into more manageable and user-friendly short URLs right from your Slack workspace. 
+The Slack URL Shortener Rails App is a web application that allows you to shorten long URLs into more manageable and user-friendly short URLs right from your Slack workspace. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -37,7 +37,6 @@ The Slackbot URL Shortener Rails App is a web application that allows you to sho
   <summary>Client</summary>
   <ul>
     <li><p> <b>Ruby on Rails: </b></p></li>
-    <li><p><b>React: </b></p></li>
   </ul>
 </details>
 
@@ -49,78 +48,62 @@ The Slackbot URL Shortener Rails App is a web application that allows you to sho
   </ul>
 </details>
 
-<summary>React</summary>
-  <ul>
-    <li><a href="https://react.dev">React</a></li>
-  </ul>
-</details>
-
-<!-- Features -->
-
 ### Key Features <a name="key-features"></a>
 
-- **[Add Car Item]**
-- **[Show Car Item details]**
-- **[Delete Items]**
-- **[Make Reservation]**
-- **[List reservations]**
+- **[Shorten long URLs to short, easy-to-share links]**
+- **[Integration with Slackbot for seamless URL shortening.]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps.
+Before you begin, ensure you have the following:
 
 ### Prerequisites
 
 - Ruby (version 3.2.2)
-- Ruby on Rails (version 7.0.0)
-- Git
-
-### Setup
-
-Clone this repository to your desired folder:
-
-Example commands
- - git clone https://github.com/Kaghenimbale/car_collection
- - cd my-folder
- 
-
+- Ruby on Rails (version 7.0.8)
+- PostgreSQL 
+- Slack workspace with a custom Slackbot
+- Basic knowledge of Rails applications and Slackbot integrations
 
 ### Install
 
-Install this project with:
+Follow these steps to install and configure the Slackbot URL Shortener Rails App:
 
-Example command:
+## Clone this repository to your local machine:
+ - git clone git@github.com:david30-maker/slack-url-shortener.git
+ ## Navigate to the project directory:
+ - cd shortened_url_app
+## Install the required Ruby gems:
+- bundle install
 
-```sh
-  bundle install
-  npm install
-```
-## Database Setup
-
-Follow these steps to create, migrate, and seed your database:
+## Create and configure your database:
 
 - rails db:create
 - rails db:migrate
-- rails db:seed
+
+## Set up your Slackbot:
+
+- Create a new Slackbot integration in your Slack workspace.
+- Note the API token generated for your Slackbot.
+## Configure environment variables:
+
+- Create a .env file in the project root directory.
+
+## Add the following environment variables to the .env file:
+- SLACK_API_TOKEN=your_slack_api_token
+- BASE_URL=your_app_base_url
+
+## Start the Rails server:
+- rails server
 
 ### Usage
+Once the Slackbot URL Shortener Rails App is set up and running, you can start using it in your Slack workspace. Here's how to use it:
 
-To running the server:
-  npm run build
-  rails s
-
-To run the back end run this command in the terminal
-
-```sh
-  rails c
-  rails db:create
-  rails db:migrate
-  rails db:seed
-```
+In any Slack channel or private message, type /shorten followed by the long URL you want to shorten. For example:
+- /shorten https://www.example.com/very-long-url-with-lots-of-characters
 
 ### Deployment
 
@@ -137,8 +120,8 @@ To run the back end run this command in the terminal
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add Cancel Reservation]**
-- [ ] **[Add other business logics]**
+- [ ] **[User Authentication and Authorization]**
+- [ ] **[URL Expiration Policies]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -159,13 +142,13 @@ Give a start ⭐️ If you like this project...
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
+Special thanks to Peplebox for this opportunity
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Kaghenimbale/car_collection/blob/main/LICENSE) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

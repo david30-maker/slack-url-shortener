@@ -53,7 +53,6 @@ The Slack URL Shortener Rails App is a web application that allows you to shorte
 - **[Shorten long URLs to short, easy-to-share links]**
 - **[Integration with Slackbot for seamless URL shortening.]**
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
